@@ -1,0 +1,137 @@
+<html>
+    <head> 
+        <title> Form Entry</title>
+        <style>
+            table
+            {
+             border-color:blue;
+            }
+                              
+             h1{
+             text-align:center;
+             }
+             th
+             {
+             text-align:right;
+             }
+             </style>
+    </head>
+    <body>
+
+        <table align="center" border="2" cellspacing="0" cellpadding="3">
+            <caption><h3>Fill Student Details...</h3></caption>
+				<tr>
+                    <th> Name</th>	
+					<td>
+						<input type="text" id="txtFN" name="txtFN" 
+						maxlength="5"  size="15" required 
+						placeholder="Full Name.." />
+					</td>				
+				</tr>	
+				<tr>
+                    <th> age</th>		
+					<td>
+						<input type="number" id="age" name="age" 
+						maxlength="2" min="18" size="15" required 
+						placeholder="age.." />
+					</td>				
+				</tr>	
+				<tr>
+                    <th> Address :</th>
+                    <td>
+                    <textarea id = "txtAddr" name = "txtAddr" rows ="5" cols ="30"  maxlength ="500" ></textarea> 
+                    </td>
+                    </tr>
+
+                <tr>
+                    <th> Mobile number</th>	
+					<td>
+                        <input type="text" id="phone" pattern="[0-9]{10}" maxlength="10" minlength="10">
+					</td>				
+				</tr>	
+                <tr>
+                    <th> email</th>	
+					<td>
+                        <input type="email" id="email" maxlength="40">
+					</td>				
+				</tr>	
+                <tr>
+                    <th>Password: </th>
+                    <td><input type="password" id="password" name="password" maxlength="8" required /></td>
+                </tr>
+
+                <tr>
+                    <th> Gender</th>	
+					<td>
+                        <input type="radio" id="rbtnmale" name="gender" value="Male"> Male
+                        <input type="radio" id="rbtnfemale" name="gender" value="Female"> Female
+					</td>				
+				</tr>
+
+                <tr>
+                    <th> Languages known</th>	
+					<td>
+                        <input type="checkbox" id="chk1" name="chk1" value="Eng"> English
+                        <input type="checkbox" id="chk1" name="chk1" value="Eng"> Tamil
+                        <input type="checkbox" id="chk1" name="chk1" value="Eng"> Hindi
+					</td>				
+				</tr>
+
+                <tr>
+                    <th> Select city</th>	
+					<td>
+                        <select name="City">
+                            <option value="Nagrecoil"> Nagrecoil</option>
+                            <option value="Chni"> Chni</option>
+                            <option value="Coimbatore"> Coimbatore</option>
+
+                        </select>
+					</td>				
+				</tr>
+
+                <tr>
+                    <th> State </th>	
+					<td>
+                        <input type="text" id="txtState" name="txtState" maxlength="20" placeholder="state" list="Statelist">
+                        <!-- provides suggestion-->
+                        <datalist id="Statelist">
+                                <option value="Maharastra"> Maharastra</option>
+                                <option value="TamilNadu"> TamilNadu</option>
+                                <option value="Andhra"> Andhra</option> 
+                            </datalist>
+					</td>				
+				</tr>
+
+                <tr>
+                <th>College URL : </th>
+                <td>
+                    <input type="url" id="txturl" name="txturl" maxlength="40"
+                           placeholder="College Website " />
+                </td>
+            </tr>
+                <tr>
+                <th>Date Of Joining</th>
+                <td><input type="date" id="start" name="trip-start" 
+				value="2018-07-22" min="2018-01-01" max="2018-12-31"></td>
+            </tr>
+             <tr>
+                <th>Upload Photo : </th>
+                <td>
+                    <input type="file" id="fileImg" name="fileImg" />
+                </td>
+            </tr>
+			<tr>
+                <th>Slider : </th>
+                <td>
+				<input type="range" min="0" max="10"  value="2"/>
+                </td>
+            </tr>  
+				 <tr>					
+					<td align="center">
+                        <!-- required is present-->
+						<input type="Submit"  value="Submit"   />
+					</td> 
+                    </tr>
+                    </table>
+    </body>
+</html>
