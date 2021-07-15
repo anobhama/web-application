@@ -14,6 +14,7 @@ function Add()
     //it displays the res in diff page
     //document.write(res);
 
+    //to display in the same page
     document.getElementById("myDiv").innerHTML=res;
 
 
