@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>Demo: Loosely type</h1>
+<!--Null type.
+The Null type has exactly one value: null
+Undefined type.
+A variable that has not been assigned a value has the value undefined -->
+<script>
+var x;
+var myVar = 100;
+myVar = true
+myVar = null;
+myVar = "Steve";
+document.write(myVar);
+//Arithmatic operator
+var x = 5, y = 10, z = 15;
+document.write(x+y +"<br>");// returns 15
+//Comparison operators
+var a = 5, b = 10, c = "5";
+document.write( a == c ); // returns true
+document.write(a === c); // returns true
+//it ignores the datatype of variable.
+// === also checks datatype and compares two values
+//document.write(a === c); returns false
+var m=40 , n=40;
+m=n++;
+document.write(m + " " + n);
+//ternary operator var a = 10, b = 5; var c = a > b ? a : b; // value of c would be 10
+document.write(c);
+var d = a > b ? b : a; // value of d would be 5
+document.write(d); </script>
+</body>
+</html>
