@@ -21,4 +21,4 @@ if(times1 >3)
     console.log(msg1);
 }
 
-console.log(msg1);  //loca;;y so throws error
+//console.log(msg1);  //locally so throws error
