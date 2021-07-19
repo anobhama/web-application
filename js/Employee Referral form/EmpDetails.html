@@ -1,0 +1,98 @@
+<meta charset = "UTF-8" />
+
+<!DOCTYPE html>
+
+<head>
+    <title> Employee details</title>
+    <script src="EmpDetailsJS.js"> </script>
+</head>
+
+<body>
+
+    <form id="form1" name="form1" method="POST" action="http://google.com">
+        <table align="center">
+            <tr>
+                <td align="center" colspan="2">
+                    <header>
+                        <h1>Employee Referral Form </h1>
+                    </header>
+                </td>
+            </tr>
+
+            <tr>
+                <th> First Name</th>
+                <td>
+                    <input type="text" id="fname" name="fname" maxlength="5" size="15" required placeholder="First Name.." />
+                </td>
+            </tr>
+
+            <tr>
+                <th> Last Name</th>
+                <td>
+                    <input type="text" id="lname" name="lname" maxlength="5" size="15" required placeholder="Last Name.." />
+                </td>
+            </tr>
+            <tr>
+                <th> Contact number</th>
+                <td>
+                    <input type="text" id="phone" name="phone" required pattern="[0-9]{10}" maxlength="10"
+                        minlength="10"/>
+                </td>
+            </tr>
+
+            <tr>
+                <th> email</th>	
+                <td>
+                    <input type="email" id="email" maxlength="40">
+                </td>				
+            </tr>
+
+            <tr>
+                <th> Date of Birth</th>
+                <td>
+                    <input type="date" id="dob" name="dob"/>
+                </td>
+            </tr>
+
+           
+            <tr>
+                <th> Current state </th>	
+                <td>
+                    <input type="text" id="state" name="state" maxlength="20" placeholder="state" list="Statelist">
+                    <datalist id="Statelist" name="Statelist">
+                            <option value="Nagercoil"> Nagercoil</option>
+                            <option value="Chennai"> Chennai</option>
+                            <option value="Coimbatore"> Coimbatore</option> 
+                        </datalist>
+                </td>				
+            </tr>
+            <tr>
+                <!---->
+                    <td align="right">
+                        <input type="button" value="Preview" 
+                        onclick ="window.open('OnDisplay();','print_popup','width=1000,height=800');"
+                        return true; /> 
+               <!--
+               <td align="right">
+                    <input type="button" value="Preview" id="Preview" name="Preview" 
+                    onclick="OnDisplay()" />
+                </td>  -->
+                <td>
+                    <input type="submit" value="submit"  />
+                    <input type="reset" value="Clear" />
+                </td>
+            </tr>
+
+            <tr>
+                <td align="center" colspan="2">
+                    <footer>
+                        This site is &#169; copyright to LTI . All rights are reserved here..
+                    </footer>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html>
