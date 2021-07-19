@@ -2,7 +2,34 @@
 
 <hr> 
 <h2> 1.Interpolation (component -> view)</h2>
+<!-- Interpolation is indicated by {{}}-->
 
 <p> Method data : additon {{addTwoNum()}} </p>
-
 <p> calling method :{{getTitle()}} </p>
+
+<hr> 
+<h2> 2. Property Binding (component -> view)</h2>
+
+<h3> syntax -> [Binding resourses]= " " </h3>
+<!-- the title property is viewed in the text box-->
+<div>
+  <span> 
+    <!-- Title is displayed in the text box
+    <input [value]="title"> -->
+    <input type="button" [value]="title">
+  </span>
+
+  <p [innerText]="title"></p>
+  <p [innerText]="addTwoNum()"></p>
+
+  <!-- diabled button control from the .ts file-->
+  <button [disabled]="isDisabled" > OK </button>
+
+</div>
+
+<hr>
+<h3>  3. Event Binding (view -> component)</h3>
+
+<button (click)='buttonClicked()'> Click me</button>
+<p> u clicked {{count}} times </p> 
+

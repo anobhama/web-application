@@ -10,6 +10,8 @@ export class AppComponent {
 
 myMsg:string="hello";
 
+isDisabled:boolean=true;
+
 num1:number=100;
 num2:number=200;
 
@@ -22,4 +24,10 @@ getTitle():string
 {
   return this.title;
 }
+
+count: number = 0;
+  buttonClicked():void {
+    this.count += 1;
+    console.log("Button Clicked");
+  }
 }
