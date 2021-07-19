@@ -2,6 +2,6 @@ var myName= "Anu";
 console.log(myName);
 
 
-let myName1= "Anu";
+let myName2= "Anu";
 console.log(myName);
 
