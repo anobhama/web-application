@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Data Binding';
 
+  today =new Date();
 myMsg:string="hello";
 
 isDisabled:boolean=true;

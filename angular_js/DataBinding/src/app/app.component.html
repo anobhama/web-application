@@ -33,3 +33,21 @@
 <button (click)='buttonClicked()'> Click me</button>
 <p> u clicked {{count}} times </p> 
 
+<hr>
+<h3> Pipes</h3>
+
+{{title|lowercase}}
+
+<br>
+
+{{title|uppercase}}
+
+<hr>
+<p> Current pipes</p>
+{{675.56| currency:"INR"}}
+
+<hr>
+<h4> Date </h4>
+
+<!--MM for month and mm for mins-->
+{{today | date:'dd-MM-yyyy hh:mm'}}
