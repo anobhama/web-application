@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SampleService } from '../sample.service';
 
 @Component({
   selector: 'app-routing1',
@@ -8,7 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class Routing1Component implements OnInit {
 
   Routing1Title="I am component routing 1";
-  constructor() { }
+  result: number=0;
+  
+  constructor(service:SampleService) 
+  {
+    this.result=service.multi(40,2);
+   }
 
   ngOnInit(): void {
   }
