@@ -1,0 +1,26 @@
+npm install --save jquery@latest
+
+npm install --save bootstrap
+
+//in angular.json inside the proj
+"styles": [
+
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+
+              "src/styles.css"
+
+            ],
+
+            "scripts": [
+
+              "./node_modules/jquery/dist/jquery.js",
+
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
+
+            ]
+          },
+
+
+
+--------------
+https://www.techiediaries.com/angular-bootstrap/
