@@ -8,6 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Data Binding';
 
+  fullname:string="Anu";
+
   today =new Date();
 myMsg:string="hello";
 

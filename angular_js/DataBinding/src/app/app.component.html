@@ -51,3 +51,12 @@
 
 <!--MM for month and mm for mins-->
 {{today | date:'dd-MM-yyyy hh:mm'}}
+
+
+<hr>
+<h3> Two way Binding</h3>
+
+Enter ur name :
+<input type="text" [(ngModel)]="fullname"/>
+<br>
+ur entered name is {{fullname}}
