@@ -1,0 +1,23 @@
+<p>product works!</p>
+
+<div class="container">
+    <div class='table-responsive'>
+         <table class="table table-striped">
+             <thead>
+                 <tr>
+                     <th>ID</th>
+                     <th>Name</th>
+                     <th>Price</th>
+                 </tr>
+             </thead>
+             <tbody>
+              <tr *ngFor="let p of prodList;">
+                     <td>{{p.prodId}}</td>
+                     <td>{{p.prodName}}</td>
+                     <td>{{p.prodPrice}}</td>
+             </tr> 
+             </tbody>
+         </table>
+     </div>
+
+</div>
