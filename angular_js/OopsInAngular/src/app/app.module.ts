@@ -8,6 +8,7 @@ import { EmployeeComponent } from './employee/employee.component';
 import { UserComponent } from './user/user.component';
 import { AddUserComponent } from './User/add-user/add-user.component';
 import { DisplayUserComponent } from './User/display-user/display-user.component';
+import { IfElseComponent } from './if-else/if-else.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DisplayUserComponent } from './User/display-user/display-user.component
     EmployeeComponent,
     UserComponent,
     AddUserComponent,
-    DisplayUserComponent
+    DisplayUserComponent,
+    IfElseComponent
   ],
   imports: [
     BrowserModule,

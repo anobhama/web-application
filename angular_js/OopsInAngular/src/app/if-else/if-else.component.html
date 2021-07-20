@@ -1,0 +1,21 @@
+<p>if-else works!</p>
+
+<body>
+    <table border="1">
+        <thead>
+            <th> Name</th>
+            <th> Mail Id</th>
+            <th *ngIf="showAction"> Action</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of contacts;">
+                <td> {{i.name}} </td>
+                <td> {{i.email}} </td>
+                <td *ngIf="showAction">
+
+                <button> delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
