@@ -8,6 +8,7 @@ import { Routing2Component } from './routing2/routing2.component';
 import { ProductComponent } from './product/product.component';
 import { HomeComponent } from './home/home.component';
 import { ErrorComponent } from './error/error.component';
+import { ProductByIdComponent } from './product-by-id/product-by-id.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ErrorComponent } from './error/error.component';
     Routing2Component,
     ProductComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    ProductByIdComponent
   ],
   imports: [
     BrowserModule,

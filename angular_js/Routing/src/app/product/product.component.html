@@ -8,6 +8,7 @@
                      <th>ID</th>
                      <th>Name</th>
                      <th>Price</th>
+                     <th> Select for Details</th>
                  </tr>
              </thead>
              <tbody>
@@ -15,6 +16,7 @@
                      <td>{{p.prodId}}</td>
                      <td>{{p.prodName}}</td>
                      <td>{{p.prodPrice}}</td>
+                     <td><a [routerLink]="['byid', p.prodId]">{{p.prodId}}</a></td>
              </tr> 
              </tbody>
          </table>
