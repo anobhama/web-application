@@ -1,6 +1,6 @@
 <br/><br/>												
 <div class="col-md-6 col-md-offset-2">												
-  <h2>Edit Contact      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;                     																							
+  <h2>Edit Contact      &nbsp; &nbsp; &nbsp;                   																							
   <br/>												
     <form [formGroup]="editForm" (ngSubmit)="onsubmit()">														
 														
@@ -21,7 +21,7 @@
     </div>												
 												
     <div class="form-group">												
-      <label for="phone">phone address:</label>												
+      <label for="phone">Phone Number:</label>												
       <input type="phone" formControlName="phone" placeholder="phone" name="phone" class="form-control" id="phone">												
       <div *ngIf="submitted && editForm.controls.phone.errors" class="error">												
         <div class="text-danger" *ngIf="editForm.controls.phone.errors.required">phone is required</div>												

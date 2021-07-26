@@ -23,6 +23,12 @@
       "firstName": "Bill",
       "lastName": "Gates",
       "phone": 2365676754
+    },
+    {
+      "id": 6,
+      "firstName": "Ano",
+      "lastName": "Bhama",
+      "phone": "1234567890"
     }
   ]
 }
