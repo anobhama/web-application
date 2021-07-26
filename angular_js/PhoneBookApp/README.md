@@ -1,5 +1,28 @@
 # PhoneBookApp
 
+
+Steps to create an Angular Project -
+
+1) new Phone-Book
+2) Add fontawesome to index.html
+3) Clear the app.component.html file and write Hello World for now
+4) Add CDN of BootStrap in index.html OR Install BootStrap & add styles and scripts to Angular.json
+5) Bootstrap import => npm install --save bootstrap
+6) jQuery import => npm install --save jquery@latest
+7) Add json commands => npm install json-server || json-server --watch db.json
+8) Create component => (home, addContact) => ng g c
+9) Create service => Contact => ng g s Contact
+10) In service => import HttpClient => add get methods
+11) Add imports to app.module.ts => HttpClientModule, FormsModule, ReactiveFormsModule
+12) Work on home component => ts and html files
+13) Add this in tsconfig.json => "strictPropertyInitialization": false,
+14) Add routes in app-routing.module.ts. Check if routes are working.
+15) Add Delete Function
+16) Added editContact component and routes
+17) Added Sorting code
+18) Added Search box, install => npm i ng2-search-filter AND npm i ng2-filter-pipe
+19) In app.module.ts => import Ng2SearchPipeModule
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
 
 ## Development server
