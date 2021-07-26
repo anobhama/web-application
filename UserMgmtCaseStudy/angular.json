@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "9d2007e6-8f1e-4f09-b4c2-8cede9ce6672"
+    "analytics": "127b3c5f-3966-4ee7-93f9-24a96f1407a0"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "OopsInAngular": {
+    "UserMgmtCaseStudy": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/OopsInAngular",
+            "outputPath": "dist/UserMgmtCaseStudy",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -30,22 +30,10 @@
               "src/assets"
             ],
             "styles": [
-
-              "node_modules/bootstrap/dist/css/bootstrap.css",
-
               "src/styles.css"
-
             ],
-
-            "scripts": [
-
-              "./node_modules/jquery/dist/jquery.js",
-
-              "./node_modules/bootstrap/dist/js/bootstrap.js"
-
-            ]
+            "scripts": []
           },
-
           "configurations": {
             "production": {
               "budgets": [
@@ -83,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "OopsInAngular:build:production"
+              "browserTarget": "UserMgmtCaseStudy:build:production"
             },
             "development": {
-              "browserTarget": "OopsInAngular:build:development"
+              "browserTarget": "UserMgmtCaseStudy:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -94,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "OopsInAngular:build"
+            "browserTarget": "UserMgmtCaseStudy:build"
           }
         },
         "test": {
@@ -117,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "OopsInAngular"
+  "defaultProject": "UserMgmtCaseStudy"
 }

@@ -1,0 +1,28 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "firstName": "Eric",
+      "lastName": "Elliot",
+      "phone": 2226666754
+    },
+    {
+      "id": 3,
+      "firstName": "Fred",
+      "lastName": "Allen",
+      "phone": 210657765
+    },
+    {
+      "id": 4,
+      "phone": "222666444",
+      "firstName": "Steve",
+      "lastName": "Elliot"
+    },
+    {
+      "id": 5,
+      "firstName": "Bill",
+      "lastName": "Gates",
+      "phone": 2365676754
+    }
+  ]
+}

@@ -64,6 +64,5 @@ export class EditUserComponent implements OnInit {
       localStorage.removeItem("username");							
       this.router.navigate(['/login']);							
     }							
-}
-
+  }
 }

@@ -2,3 +2,6 @@ npm install -g json-server
 
 json-server --watch db.json
 
+---search
+npm i ng2-filter-pipe
+npm i ng2-search-filter

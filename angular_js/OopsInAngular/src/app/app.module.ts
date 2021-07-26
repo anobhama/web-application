@@ -9,6 +9,7 @@ import { UserComponent } from './user/user.component';
 import { AddUserComponent } from './User/add-user/add-user.component';
 import { DisplayUserComponent } from './User/display-user/display-user.component';
 import { IfElseComponent } from './if-else/if-else.component';
+import { SwitchCaseComponent } from './switch-case/switch-case.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { IfElseComponent } from './if-else/if-else.component';
     UserComponent,
     AddUserComponent,
     DisplayUserComponent,
-    IfElseComponent
+    IfElseComponent,
+    SwitchCaseComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,55 @@
+
+<br /><br />
+<div class="container">
+  <br />
+  <br />
+
+  <form class="form-horizontal">
+    <div class="form-group has-info has-feedback">
+        <div class="col-sm-5">
+          <label for="search" class="col-sm-2 control-label"><b> SEARCH</b> </label>
+          <input type="text"  name="search" [(ngModel)]="test" class="form-control">
+          <span class="glyphicon glyphicon-search form-control-feedback"></span>                                          
+        </div>
+    </div>
+</form> 
+<div class="col-sm-5">
+  <button class="btn btn-primary" (click)="createContact()"> Add Contact</button> 
+</div>
+<br /><br />
+  <div class="table-responsive">
+    <table class="table table-striped table-hover" border="1">
+      <thead>
+        <tr>
+          <!--<th class="d-none">Id</th>-->
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Phone Number</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="list-group list-group-flush" *ngFor="let user of ContactList | filter:test">
+            <!--<td class="d-none">{{ user.id }}</td>-->
+            <td>{{ user.firstName | lowercase }}</td>
+            <td>{{ user.lastName | lowercase }}</td>
+            <td>{{ user.phone }}</td>
+            <td>
+            <button class="btn btn-danger" (click)="deleteContact(user)"> Delete</button>
+            <button class="btn btn-warning" (click)="updateContact(user)" style="margin-left: 20px;"> Edit</button> 
+            </td>
+        </tr>
+        <tr *ngIf="!ContactList || ContactList.length == 0">
+          <th colspan="5">
+            <p class="text-right text-danger">Sorry No Contacts Available</p>  
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!--
+<app-add-contact> </app-add-contact>
+
+<app-edit-contact> </app-edit-contact> -->
